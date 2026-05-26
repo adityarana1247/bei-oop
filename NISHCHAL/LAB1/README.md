@@ -15,7 +15,7 @@
 
 ---
 
-## 2. Pattern Program
+## 4. Pattern Program
 ![Function Screenshot](output/Function.png)
 
 ---
