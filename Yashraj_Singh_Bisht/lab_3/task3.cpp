@@ -32,22 +32,22 @@ public:
     void deposit(float amount) {
         if (amount > 0) {
             balance += amount;
-            std::cout << "Deposited: $" << amount << " | New Balance: $" << balance << std::endl;
+            std::cout << "Deposited: RS" << amount << " | New Balance: RS" << balance << std::endl;
         }
     }
 
     void withdraw(float amount) {
         if (amount > balance) {
-            std::cout << "Error: Insufficient balance to withdraw $" << amount << std::endl;
+            std::cout << "Error: Insufficient balance to withdraw RS" << amount << std::endl;
         } else if (amount > 0) {
             balance -= amount;
-            std::cout << "Withdrew: $" << amount << " | New Balance: $" << balance << std::endl;
+            std::cout << "Withdrew: RS" << amount << " | New Balance: RS" << balance << std::endl;
         }
     }
 
     void display() const {
         std::cout << "Acc No: " << accountNumber << " | Holder: " << holderName 
-                  << " | Balance: $" << balance << std::endl;
+                  << " | Balance: RS" << balance << std::endl;
     }
 };
 
@@ -57,7 +57,7 @@ int main() {
     acc1.display();
 
     std::cout << "\n--- Testing Parameterised Constructor ---" << std::endl;
-    BankAccount acc2(101, "Alice Smith", 500.0f);
+    BankAccount acc2(101, "Rajesh", 500.0f);
     acc2.display();
 
     std::cout << "\n--- Performing Operations ---" << std::endl;
