@@ -1,6 +1,0 @@
-
-
-Enter Physics marks: 80
-Enter Maths marks: 85
-Total marks: 165
-Distinction achieved
